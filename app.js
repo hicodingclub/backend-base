@@ -26,7 +26,8 @@ const emailInfoForAuth = {
 let option = {
     authz: 'group', // user group based authorization
 };
-const authApp = require('@hicoder/express-auth-app');
+const AuthApp = require('@hicoder/express-auth-app');
+const authApp = new AuthApp();
 const authFuncs = authApp.getAuthFuncs(option);
 // for auth server
 const authServer = require('@hicoder/express-auth-server');
